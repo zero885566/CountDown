@@ -151,8 +151,11 @@
                 width: 160px;
                 height: auto;
             }
+            .time{
+                height: 65%;
+            }
             input{
-                height: 100px;
+                height: 70px;
             }
             .time{
                 font-size: 300%;
@@ -491,8 +494,6 @@
         let cardOpened = 0;
         $("button").click(function () {
             $('.card').toggleClass("active")
-            cardOpened = $(".card.active").length;
-            console.log(cardOpened)
         })
     </script>
 
@@ -511,6 +512,8 @@
 
                 if (totalsec.length > 2) {
                     alert('最大輸入兩位數')
+                    let none = ''
+                    document.getElementById('text').value =none
                     totalsec = 0
                 }
                 else {
